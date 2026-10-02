@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="theme-color" content="#0ea5e9" />
+<title>HAVEN Demo &mdash; H.A.V.E.N.</title>
+<meta name="description" content="Watch the H.A.V.E.N. demo: find, select and model high-value AI agents for healthcare." />
+<script>
+(function () {
+  var t = null;
+  try { t = localStorage.getItem("haven3:hcaiwb_theme") || localStorage.getItem("hcaiwb_theme"); } catch (e) {}
+  document.documentElement.setAttribute("data-theme", t === "dark" ? "dark" : "light");
+})();
+</script>
+<style>
+:root{color-scheme:light;--bg:#f7f4ef;--elev:#fcfbf8;--surface:#ffffff;--soft:#f2efe9;--border:#e2ddd4;--text:#242424;--muted:#5c574f;--accent:#0284c7;--accent-ink:#0369a1;--on-accent:#ffffff;--accent-soft:rgba(14,165,233,.08);--coral:#fb7185;--font:"Segoe UI",Aptos,Calibri,-apple-system,BlinkMacSystemFont,sans-serif}
+html[data-theme="dark"]{color-scheme:dark;--bg:#21242a;--elev:#2b2f36;--surface:#2f333a;--soft:#363b43;--border:#3f4650;--text:#dedede;--muted:#b0b0b0;--accent:#7dd3fc;--accent-ink:#7dd3fc;--on-accent:#0a1a3a;--accent-soft:rgba(125,211,252,.14)}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.5;letter-spacing:-.006em;-webkit-font-smoothing:antialiased;min-height:100vh;display:flex;flex-direction:column}
+.skip{position:absolute;left:-999px;top:8px;background:var(--surface);color:var(--text);padding:8px 12px;border-radius:8px;z-index:10}
+.skip:focus{left:8px}
+.top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 24px;background:var(--elev);border-bottom:1px solid var(--border)}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--text)}
+.brand svg{width:36px;height:36px;flex:none}
+.name{font-weight:800;letter-spacing:.1em;font-size:1.05rem;color:var(--accent-ink)}
+.name i{font-style:normal;color:var(--coral)}
+.back{color:var(--accent-ink);font-weight:600;text-decoration:none;font-size:.9rem;padding:8px 14px;border-radius:999px;border:1px solid var(--border);background:var(--surface)}
+.back:hover{border-color:var(--accent)}
+.wrap{width:100%;max-width:960px;margin:0 auto;padding:32px 22px 56px;flex:1}
+.hero{position:relative;overflow:hidden;background:linear-gradient(135deg,var(--elev) 0%,var(--accent-soft) 100%);border:1px solid var(--border);border-radius:16px;padding:30px 32px;box-shadow:0 0 2px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.14)}
+.hero::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--accent)}
+.kicker{font-size:.8rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-ink)}
+h1{margin:4px 0 8px;font-size:2rem;letter-spacing:-.01em}
+.lead{margin:0 0 20px;color:var(--muted);font-size:1.05rem;max-width:640px}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:16px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:12px 20px;border-radius:999px;font:inherit;font-weight:700;font-size:.95rem;text-decoration:none;border:1px solid var(--border);background:var(--surface);color:var(--text);min-height:44px}
+.btn:hover{border-color:var(--accent)}
+.btn.primary{background:var(--accent-ink);border-color:var(--accent-ink);color:var(--on-accent)}
+.btn.primary:hover{filter:brightness(1.1)}
+.btn svg{width:20px;height:20px;flex:none}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.note{margin:0;font-size:.86rem;color:var(--muted);max-width:640px}
+.note a{color:var(--accent-ink);font-weight:600}
+.steps{margin-top:32px}
+.steps h2{font-size:1.15rem;margin:0 0 14px}
+.steps ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
+.steps li{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px 16px 18px}
+.steps .n{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;background:var(--accent-ink);color:var(--on-accent);font-weight:800;font-size:.85rem;margin-bottom:10px}
+.steps h3{margin:0 0 4px;font-size:.98rem}
+.steps p{margin:0;color:var(--muted);font-size:.86rem}
+footer{border-top:1px solid var(--border);background:var(--elev);padding:18px 24px;font-size:.78rem;color:var(--muted)}
+footer .row{max-width:960px;margin:0 auto;display:flex;flex-wrap:wrap;gap:6px 18px;justify-content:space-between}
+footer .row + .row{margin-top:6px}
+@media (max-width:600px){.top{padding:12px 16px}.hero{padding:22px 20px}h1{font-size:1.6rem}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="top">
+  <a class="brand" href="https://jgardn22.github.io/haven/" aria-label="H.A.V.E.N. home">
+    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><linearGradient id="hg" x1="8" y1="6" x2="56" y2="58" gradientUnits="userSpaceOnUse"><stop stop-color="#0ea5e9"/><stop offset=".5" stop-color="#0284c7"/><stop offset="1" stop-color="#38bdf8"/></linearGradient></defs><path d="M32 4 L55 13 V33 C55 48 45 57.5 32 61.5 C19 57.5 9 48 9 33 V13 Z" fill="url(#hg)"/><g stroke="#ffffff" stroke-width="1.25" opacity=".42" stroke-linecap="round" fill="none"><line x1="32" y1="32" x2="32" y2="13.5"/><line x1="32" y1="32" x2="48" y2="22.75"/><line x1="32" y1="32" x2="48" y2="41.25"/><line x1="32" y1="32" x2="32" y2="50.5"/><line x1="32" y1="32" x2="16" y2="41.25"/><line x1="32" y1="32" x2="16" y2="22.75"/><path d="M32 13.5 L48 22.75 L48 41.25 L32 50.5 L16 41.25 L16 22.75 Z"/></g><circle cx="32" cy="13.5" r="2.6" fill="#fff"/><circle cx="48" cy="22.75" r="2.6" fill="#fff"/><circle cx="48" cy="41.25" r="2.6" fill="#fff"/><circle cx="32" cy="50.5" r="2.6" fill="#fff"/><circle cx="16" cy="41.25" r="2.6" fill="#fff"/><circle cx="16" cy="22.75" r="2.6" fill="#fff"/><circle cx="32" cy="32" r="8.2" fill="#fff"/><path d="M32 27.4 V36.6 M27.4 32 H36.6" stroke="#fb7185" stroke-width="3.1" stroke-linecap="round"/></svg>
+    <span class="name">H<i>.</i>A<i>.</i>V<i>.</i>E<i>.</i>N<i>.</i></span>
+  </a>
+  <a class="back" href="https://jgardn22.github.io/haven/">&larr; Open HAVEN</a>
+</header>
+<main id="main" class="wrap">
+  <section class="hero">
+    <div class="kicker">Demo</div>
+    <h1>HAVEN Demo</h1>
+    <p class="lead">See HAVEN in action: find high-value healthcare AI agents, build a selection, and model the impact before you pilot.</p>
+    <div class="actions">
+      <a class="btn primary" href="https://microsoft.sharepoint.com/:v:/r/teams/fy26jessesaiteam/_layouts/15/stream.aspx?id=%2Fteams%2Ffy26jessesaiteam%2FShared%20Documents%2FHAVEN%2FHow%20to%20Use%2FHAVEN%20%2D%20Demo%2Emp4&amp;share=cQr4FIHJndqJSLt1tkUqFRReEgUC2vkZH0BCrMUYfkpohiymRA" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M10.2 8.6v6.8l5.6-3.4z"/></svg>Watch the HAVEN demo</a>
+      <a class="btn" href="https://jgardn22.github.io/haven/">Open the HAVEN workbench</a>
+    </div>
+    <p class="note">The demo video is hosted on Microsoft SharePoint and opens in a new tab. You will be asked to sign in with a Microsoft work account. Don&rsquo;t have access? <a href="mailto:bretthall@microsoft.com;jawarner@microsoft.com;jessewa@microsoft.com?subject=HAVEN%20Demo%20%E2%80%94%20request%20access">Ask the HAVEN team</a>.</p>
+  </section>
+  <section class="steps" aria-labelledby="steps-h">
+    <h2 id="steps-h">HAVEN in four steps</h2>
+    <ol>
+      <li><span class="n">1</span><h3>Browse the Library</h3><p>Ready-to-build agents by department. Open any agent for a copy-paste recipe across Copilot, Copilot Studio, Cowork and Microsoft Scout.</p></li>
+      <li><span class="n">2</span><h3>Build My Selection</h3><p>Confirm the people and assumptions behind each pick: users, frequency, realization and any cash effect.</p></li>
+      <li><span class="n">3</span><h3>See Impact &amp; export</h3><p>Open Impact for the value, cost and net return, then export a build brief or exec deck.</p></li>
+      <li><span class="n">4</span><h3>Plan Security &amp; IT</h3><p>Data access, human review and governance: the gates that move a pick from plan to pilot.</p></li>
+    </ol>
+  </section>
+</main>
+<footer>
+  <div class="row"><span><strong>H.A.V.E.N.</strong> &middot; Health Agentic Value Enablement Network &middot; HAVEN Team, US HLS AI Business Solutions</span><span>Version 2026.09.30 &middot; Published Oct 2, 2026</span></div>
+  <div class="row"><span>H.A.V.E.N. is a planning aid, not an official Microsoft product, quote, or commitment.</span></div>
+</footer>
+</body>
+</html>
