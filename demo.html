@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="robots" content="noindex, nofollow" />
 <meta name="theme-color" content="#0ea5e9" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M32 4L55 13V33C55 48 45 57.5 32 61.5 19 57.5 9 48 9 33V13Z' fill='%230284c7'/%3E%3Ccircle cx='32' cy='32' r='8.2' fill='%23fff'/%3E%3Cpath d='M32 27.4V36.6M27.4 32H36.6' stroke='%23fb7185' stroke-width='3.1' stroke-linecap='round'/%3E%3C/svg%3E" />
 <title>HAVEN Demo &mdash; H.A.V.E.N.</title>
 <meta name="description" content="Watch the H.A.V.E.N. demo: find, select and model high-value AI agents for healthcare." />
 <script>
@@ -51,6 +52,12 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .steps .n{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;background:var(--accent-ink);color:var(--on-accent);font-weight:800;font-size:.85rem;margin-bottom:10px}
 .steps h3{margin:0 0 4px;font-size:.98rem}
 .steps p{margin:0;color:var(--muted);font-size:.86rem}
+.player-card{margin:22px 0 20px}
+.player{width:min(100%,calc(76vh * var(--ar)));aspect-ratio:var(--ar);margin:0 auto;background:#000;border-radius:14px;overflow:hidden;border:1px solid var(--border);box-shadow:0 10px 30px rgba(0,0,0,.18)}
+.player video{display:block;width:100%;height:100%;background:#000}
+.player p{color:#fff;padding:20px;margin:0}
+.player p a{color:#7dd3fc}
+.player-card .note{max-width:none;margin-top:12px}
 footer{border-top:1px solid var(--border);background:var(--elev);padding:18px 24px;font-size:.78rem;color:var(--muted)}
 footer .row{max-width:960px;margin:0 auto;display:flex;flex-wrap:wrap;gap:6px 18px;justify-content:space-between}
 footer .row + .row{margin-top:6px}
@@ -72,11 +79,18 @@ footer .row + .row{margin-top:6px}
     <div class="kicker">Demo</div>
     <h1>HAVEN Demo</h1>
     <p class="lead">See HAVEN in action: find high-value healthcare AI agents, build a selection, and model the impact before you pilot.</p>
+    <figure class="player-card">
+      <div class="player" style="--ar:1.3333">
+        <video id="demoVideo" controls preload="metadata" playsinline poster="media/HAVEN-Demo-poster.jpg" aria-label="HAVEN demo video, about 5 minutes">
+          <source src="media/HAVEN-Demo.mp4" type="video/mp4">
+          <p>This browser can&rsquo;t play the video here. <a href="media/HAVEN-Demo.mp4">Open the MP4 directly</a>.</p>
+        </video>
+      </div>
+      <figcaption class="note">Runtime 5:19. Recorded on an earlier build of HAVEN, so some screens and counts differ from the live workbench. Trouble playing it? <a href="media/HAVEN-Demo.mp4">Open the MP4 directly</a> (78 MB). Questions or feedback? <a href="mailto:bretthall@microsoft.com;jawarner@microsoft.com;jessewa@microsoft.com?subject=HAVEN%20Demo%20%E2%80%94%20feedback">Reach the HAVEN team</a>.</figcaption>
+    </figure>
     <div class="actions">
-      <a class="btn primary" href="https://microsoft.sharepoint.com/:v:/r/teams/fy26jessesaiteam/_layouts/15/stream.aspx?id=%2Fteams%2Ffy26jessesaiteam%2FShared%20Documents%2FHAVEN%2FHow%20to%20Use%2FHAVEN%20%2D%20Demo%2Emp4&amp;share=cQr4FIHJndqJSLt1tkUqFRReEgUC2vkZH0BCrMUYfkpohiymRA" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M10.2 8.6v6.8l5.6-3.4z"/></svg>Watch the HAVEN demo</a>
-      <a class="btn" href="https://jgardn22.github.io/haven/">Open the HAVEN workbench</a>
+      <a class="btn primary" href="https://jgardn22.github.io/haven/">Open the HAVEN workbench</a>
     </div>
-    <p class="note">The demo video is hosted on Microsoft SharePoint and opens in a new tab. You will be asked to sign in with a Microsoft work account. Don&rsquo;t have access? <a href="mailto:bretthall@microsoft.com;jawarner@microsoft.com;jessewa@microsoft.com?subject=HAVEN%20Demo%20%E2%80%94%20request%20access">Ask the HAVEN team</a>.</p>
   </section>
   <section class="steps" aria-labelledby="steps-h">
     <h2 id="steps-h">HAVEN in four steps</h2>

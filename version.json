@@ -6,5 +6,11 @@
   "sourceBytes": 3086287,
   "sourceSha256": "802dfa7ad89488f122c5f42731822e77554bbbbbd60f5487469a7cfb84a1588c",
   "indexSha256": "52262794c4cb847fa8236c509a81b1a7c4a2b5e3413e63085c17d189a9122999",
-  "publishedAt": "2026-10-12T14:43:33Z"
+  "publishedAt": "2026-10-12T14:43:33Z",
+  "demoVideo": {
+    "file": "media/HAVEN-Demo.mp4",
+    "bytes": 77558446,
+    "sha256": "0a1e4fa88f5a82815806f77229a07eeb13fe82ab0452888612c866e2d4b0fe5c",
+    "sourceModified": "2026-08-21T15:29:41Z"
+  }
 }
